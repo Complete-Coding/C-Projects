@@ -9,4 +9,8 @@
 ## 3. Digital Clock
   https://github.com/KG-Coding-with-Prashant-Sir/C-Projects/assets/102736197/a15144e7-c736-4a39-af6e-acfae9fc06ae
 
+## 4. Progress Bar
+  https://github.com/KG-Coding-with-Prashant-Sir/C-Projects/assets/102736197/199300af-408e-4eca-922b-d73722a786dd
+
+
 
