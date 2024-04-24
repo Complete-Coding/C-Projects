@@ -17,3 +17,7 @@
   
 ## 6. Bank Management System
   <img width="1800" alt="bank" src="https://github.com/KG-Coding-with-Prashant-Sir/C-Projects/assets/102736197/491bfc9a-38ce-46b1-be69-a46cf75f82dc">
+  
+## 7. SUDOKU Solver
+  <img width="954" alt="Screenshot 2024-04-24 at 10 28 47 AM" src="https://github.com/KG-Coding-with-Prashant-Sir/C-Projects/assets/102736197/c70a8369-1d36-4ddf-b46e-2673a9905d67">
+
