@@ -21,3 +21,6 @@
 ## 7. SUDOKU Solver
   <img width="954" alt="Screenshot 2024-04-24 at 10 28 47 AM" src="https://github.com/KG-Coding-with-Prashant-Sir/C-Projects/assets/102736197/c70a8369-1d36-4ddf-b46e-2673a9905d67">
 
+## 8. Tic-Tac-Toe
+  <img width="938" alt="Screenshot 2024-04-24 at 4 49 29 PM" src="https://github.com/KG-Coding-with-Prashant-Sir/C-Projects/assets/102736197/92e1804b-1206-415d-96f4-65125178bc2c">
+  <img width="970" alt="Screenshot 2024-04-24 at 4 49 10 PM" src="https://github.com/KG-Coding-with-Prashant-Sir/C-Projects/assets/102736197/f881e010-4c2d-4251-a8c9-e7bcceb9ca1f">
