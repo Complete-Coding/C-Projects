@@ -14,6 +14,6 @@
 
 ## 5. User Management
   <img width="1253" alt="Screenshot 2024-04-23 at 10 07 06 AM" src="https://github.com/KG-Coding-with-Prashant-Sir/C-Projects/assets/102736197/0c6272c9-4e46-4275-9645-727bc495df91">
-
-
-
+  
+## 6. Bank Management System
+  <img width="1800" alt="bank" src="https://github.com/KG-Coding-with-Prashant-Sir/C-Projects/assets/102736197/491bfc9a-38ce-46b1-be69-a46cf75f82dc">
