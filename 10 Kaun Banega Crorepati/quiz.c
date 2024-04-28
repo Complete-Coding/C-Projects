@@ -5,11 +5,15 @@
 #include <termios.h>
 #include <unistd.h>
 #include <time.h>
+#include <stdbool.h>
+
 
 #define MAX_QUES_LEN 300
 #define MAX_OPTION_LEN 100
 
 volatile int timeout_happened = 0;
+bool *question; 
+int money_won = 0;
 
 const char* COLOR_END = "\033[0m";
 const char* RED = "\033[1;31m";
@@ -24,11 +28,10 @@ typedef struct {
   char options[4][MAX_OPTION_LEN];
   char correct_option;
   int timeout;
-  int prize_money;
 } Question;
 
 int read_questions(char* file_name, Question** questions);
-void print_formatted_question(Question question);
+void print_formatted_question(Question question ,int no_of_questions);
 void play_game(Question* questions, int no_of_questions);
 int use_lifeline(Question* question, int* lifeline);
 
@@ -42,7 +45,9 @@ int main() {
   printf("\t\t%sChalo Kehlte hain KAUN BANEGA CROREPATI !!!%s", PINK, COLOR_END);
   Question* questions;
   int no_of_questions = read_questions("questions.txt", &questions);
+  question = (bool *) malloc(no_of_questions * sizeof(bool));
   play_game(questions, no_of_questions);
+  free(question);
   exit(0);
 }
 
@@ -53,41 +58,55 @@ void timeout_handler() {
 }
 
 void play_game(Question* questions, int no_of_questions) {
-  int money_won = 0;
-  int lifeline[] = {1, 1};
-
-  signal(SIGALRM, timeout_handler);
-
-  for (int i = 0; i < no_of_questions; i++) {
-    print_formatted_question(questions[i]);
-    alarm(questions[i].timeout);
-    char ch = getchar();
-    alarm(0);
-    printf("%c", ch);
-    ch = toupper(ch);
-
-    if (timeout_happened == 1) {
-      break;
+    int lifeline[] = {1, 1};
+    int shuffled_indices[no_of_questions];
+    
+    // Initialize shuffled indices
+    for (int i = 0; i < no_of_questions; i++) {
+        shuffled_indices[i] = i;
+    }
+    
+    // Shuffle the indices
+    for (int i = no_of_questions - 1; i > 0; i--) {
+        int j = rand() % (i + 1);
+        int temp = shuffled_indices[i];
+        shuffled_indices[i] = shuffled_indices[j];
+        shuffled_indices[j] = temp;
     }
 
-    if (ch == 'L') {
-      int value = use_lifeline(&questions[i], lifeline);
-      if (value != 2) {
-        i--;
-      }
-      continue;
-    }
+    for (int i = 0; i < no_of_questions; i++) {
+        print_formatted_question(&questions[shuffled_indices[i]]); // Use shuffled indices
+        timeout_happened = 0; // Reset timeout flag
+        pthread_create(&timer_thread, NULL, timeout_thread, &questions[shuffled_indices[i]]); // Start timer thread
+        char ch = getchar();
+        pthread_cancel(timer_thread); // Cancel timer thread
+        ch = toupper(ch);
+        
+        // Clear input buffer
+        while ((getchar()) != '\n'); // Read and discard characters until newline
+        
+        if (timeout_happened == 1) {
+            break;
+        }
 
-    if (ch == questions[i].correct_option) {
-      printf("%s\nCorrect!%s", GREEN, COLOR_END);
-      money_won = questions[i].prize_money;
-      printf("\n%sYou have won: Rs %d%s", BLUE, money_won, COLOR_END);
-    } else {
-      printf("%s\nWrong! Correct answer is %c.%s", RED, questions[i].correct_option, COLOR_END);
-      break;
+        if (ch == 'L') {
+            int value = use_lifeline(&questions[shuffled_indices[i]], lifeline);
+            if (value != 2) {
+                i--;
+            }
+            continue;
+        }
+
+        if (ch == questions[shuffled_indices[i]].correct_option) {
+            printf("%s\nCorrect!%s", GREEN, COLOR_END);
+            money_won = money_won * 2;
+            printf("\n%sYou have won: Rs %d%s", BLUE, money_won, COLOR_END);
+        } else {
+            printf("%s\nWrong! Correct answer is %c.%s", RED, questions[shuffled_indices[i]].correct_option, COLOR_END);
+            break;
+        }
     }
-  }
-  printf("\n\n%sGame Over! Your total winnings are: Rs %d%s\n", BLUE,  money_won, COLOR_END);
+    printf("\n\n%sGame Over! Your total winnings are: Rs %d%s\n", BLUE,  money_won, COLOR_END);
 }
 
 int use_lifeline(Question* question, int* lifeline) {
@@ -129,16 +148,26 @@ int use_lifeline(Question* question, int* lifeline) {
   return 0;
 }
 
-void print_formatted_question(Question question) {
-  printf("\n\n%s%s%s", YELLOW, question.text, COLOR_END);
+void print_formatted_question(Question* questions, int no_of_questions) {
+  int index;
+  do {
+    index = rand() % no_of_questions;
+  } while (question[index]);
+
+  question[index] = true; 
+  Question selected_question = questions[index];
+
+  printf("\n\n%s%s%s", YELLOW, selected_question.text, COLOR_END);
   for (int i = 0; i < 4; i++) {
-    if (question.options[i][0] != '\0') {
-      printf("%s%c. %s%s", AQUA, ('A' + i), question.options[i], COLOR_END);
+    if (selected_question.options[i][0] != '\0') {
+      printf("%s%c. %s%s", AQUA, ('A' + i), selected_question.options[i], COLOR_END);
     }
   }
-  printf("\n%sHurry!! You have only %d Seconds to answer..%s", YELLOW, question.timeout, COLOR_END);
+  printf("\n%sHurry!! You have only %d Seconds to answer..%s", YELLOW, selected_question.timeout, COLOR_END);
+  printf("\n%sPrize Money: Rs %d%s", YELLOW, money_won*2, COLOR_END);
   printf("\n%sEnter your answer (A, B, C, or D) or L for lifeline: %s", GREEN, COLOR_END);
 }
+
 
 int read_questions(char* file_name, Question** questions) {
   FILE *file = fopen(file_name, "r");
@@ -151,7 +180,8 @@ int read_questions(char* file_name, Question** questions) {
   while (fgets(str, MAX_QUES_LEN, file)) {
     no_of_lines++;
   }
-  int no_of_questions = no_of_lines / 8;
+  int no_of_questions = no_of_lines / 7;
+  bool question[no_of_questions];
   *questions = (Question *) malloc(no_of_questions * sizeof(Question));
   rewind(file);
   for (int i = 0; i < no_of_questions; i++) {
@@ -166,10 +196,9 @@ int read_questions(char* file_name, Question** questions) {
     char timeout[10];
     fgets(timeout, 10, file);
     (*questions)[i].timeout = atoi(timeout);
+    
+    question[i] = false;
 
-    char prize_money[10];
-    fgets(prize_money, 10, file);
-    (*questions)[i].prize_money = atoi(prize_money);
   }
   fclose(file);
   return no_of_questions;
