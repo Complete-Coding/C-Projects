@@ -99,7 +99,7 @@ void play_game(Question* questions, int no_of_questions) {
 
         if (ch == questions[shuffled_indices[i]].correct_option) {
             printf("%s\nCorrect!%s", GREEN, COLOR_END);
-            money_won = money_won * 2;
+            money_won = money_won != 0 ? money_won*2:1000;
             printf("\n%sYou have won: Rs %d%s", BLUE, money_won, COLOR_END);
         } else {
             printf("%s\nWrong! Correct answer is %c.%s", RED, questions[shuffled_indices[i]].correct_option, COLOR_END);
@@ -164,7 +164,7 @@ void print_formatted_question(Question* questions, int no_of_questions) {
     }
   }
   printf("\n%sHurry!! You have only %d Seconds to answer..%s", YELLOW, selected_question.timeout, COLOR_END);
-  printf("\n%sPrize Money: Rs %d%s", YELLOW, money_won*2, COLOR_END);
+  printf("\n%sPrize Money: Rs %d%s", YELLOW, money_won!= 0?money_won*2:money_won, COLOR_END);
   printf("\n%sEnter your answer (A, B, C, or D) or L for lifeline: %s", GREEN, COLOR_END);
 }
 
