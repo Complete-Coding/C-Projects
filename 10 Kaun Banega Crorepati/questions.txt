@@ -5,7 +5,6 @@ Kolkata
 Chennai
 A
 10
-1000
 Which Indian city is known as the "Silicon Valley of India"?
 Hyderabad
 Bangalore
@@ -13,7 +12,6 @@ Chennai
 Mumbai
 B
 10
-2000
 Who wrote the national anthem of India?
 Rabindranath Tagore
 Bankim Chandra Chatterjee
@@ -21,7 +19,6 @@ Mahatma Gandhi
 Sarojini Naidu
 A
 10
-3000
 What is the main ingredient in the traditional Indian dish "Biryani"?
 Wheat
 Rice
@@ -29,7 +26,6 @@ Barley
 Corn
 B
 10
-5000
 What is the national animal of India?
 Tiger
 Elephant
@@ -37,7 +33,6 @@ Peacock
 Lion
 A
 10
-10000
 Which river is considered the holiest in India?
 Ganga
 Yamuna
@@ -45,7 +40,6 @@ Kaveri
 Godavari
 A
 15
-20000
 Who was the first Prime Minister of India?
 Jawaharlal Nehru
 Mahatma Gandhi
@@ -53,7 +47,6 @@ Indira Gandhi
 Lal Bahadur Shastri
 A
 15
-40000
 Which is the largest state in India by area?
 Maharashtra
 Uttar Pradesh
@@ -61,7 +54,6 @@ Rajasthan
 Madhya Pradesh
 C
 15
-80000
 What is the traditional sport of India?
 Cricket
 Kabaddi
@@ -69,7 +61,6 @@ Hockey
 Football
 B
 15
-160000
 In which year did India gain independence?
 1945
 1947
@@ -77,7 +68,6 @@ In which year did India gain independence?
 1952
 B
 15
-320000
 What is the highest civilian award in India?
 Padma Shri
 Padma Bhushan
@@ -85,7 +75,6 @@ Bharat Ratna
 Padma Vibhushan
 C
 30
-640000
 Which Indian film industry is known as "Bollywood"?
 Hindi
 Tamil
@@ -93,7 +82,6 @@ Telugu
 Kannada
 A
 30
-1250000
 Who is known as the "Father of the Indian nuclear program"?
 Homi J. Bhabha
 Vikram Sarabhai
@@ -101,7 +89,6 @@ A.P.J. Abdul Kalam
 C.V. Raman
 A
 30
-2500000
 What is the popular classical dance form of northern India?
 Kathak
 Bharatanatyam
@@ -109,7 +96,6 @@ Kuchipudi
 Odissi
 A
 30
-5000000
 Which Mughal emperor built the Taj Mahal?
 Akbar
 Jahangir
@@ -117,4 +103,787 @@ Shah Jahan
 Aurangzeb
 C
 30
-10000000
+What is the highest mountain peak in India?
+Mount Everest
+K2
+Kanchenjunga
+Nanda Devi
+C
+10
+Who is known as the "Missile Man of India"?
+Atal Bihari Vajpayee
+Narendra Modi
+Dr. APJ Abdul Kalam
+Manmohan Singh
+C
+10
+Which festival is known as the "Festival of Lights" in India?
+Holi
+Diwali
+Navratri
+Eid
+B
+10
+What is the currency of India?
+Rupee
+Yen
+Dollar
+Euro
+A
+10
+Who was the first woman Prime Minister of India?
+Sonia Gandhi
+Pratibha Patil
+Sushma Swaraj
+Indira Gandhi
+D
+10
+Which Indian state is known as the "Land of Five Rivers"?
+Punjab
+Rajasthan
+Uttar Pradesh
+Kerala
+A
+15
+What is the national flower of India?
+Lotus
+Rose
+Jasmine
+Marigold
+A
+15
+What is the national bird of India?
+Peacock
+Sparrow
+Pigeon
+Crow
+A
+15
+Who is known as the "Iron Man of India"?
+Sardar Vallabhbhai Patel
+Subhas Chandra Bose
+Bal Gangadhar Tilak
+Lala Lajpat Rai
+A
+15
+Which Indian city is famous for its IT industry and is often called the "Cyberabad"?
+Hyderabad
+Bangalore
+Chennai
+Mumbai
+A
+15
+What is the official language of the Indian state of Tamil Nadu?
+Tamil
+Telugu
+Kannada
+Malayalam
+A
+15
+Which mountain range separates India from the rest of Asia?
+Himalayas
+Aravalli Range
+Western Ghats
+Eastern Ghats
+A
+15
+Who is considered the "Father of the Indian Constitution"?
+B.R. Ambedkar
+Jawaharlal Nehru
+Mahatma Gandhi
+Sardar Vallabhbhai Patel
+A
+15
+Which Indian state is famous for its backwaters?
+Kerala
+Goa
+Maharashtra
+Karnataka
+A
+15
+What is the name of the Indian space research organization?
+ISRO (Indian Space Research Organisation)
+NASA (National Aeronautics and Space Administration)
+ESA (European Space Agency)
+CNSA (China National Space Administration)
+A
+15
+Who is known as the "Nightingale of India"?
+Sarojini Naidu
+Indira Gandhi
+Lata Mangeshkar
+Mother Teresa
+A
+15
+Which Indian city is known as the "Pink City"?
+Jaipur
+Jodhpur
+Udaipur
+Bikaner
+A
+15
+Which Indian state is known as the "Land of Seven Sisters"?
+Assam
+Arunachal Pradesh
+Manipur
+Meghalaya
+B
+15
+Who was the first woman to climb Mount Everest from India?
+Bachendri Pal
+Santosh Yadav
+Arunima Sinha
+Malavath Purna
+A
+15
+What is the name of the longest river in India?
+Ganga
+Yamuna
+Brahmaputra
+Godavari
+C
+15
+Which Indian city is famous for the annual Kumbh Mela festival?
+Varanasi
+Allahabad (Prayagraj)
+Haridwar
+Ujjain
+B
+15
+Who is known as the "Mahatma"?
+Mahatma Gandhi
+Jawaharlal Nehru
+Sardar Vallabhbhai Patel
+B.R. Ambedkar
+A
+15
+What is the name of the historical monument located in Agra, India, which is one of the Seven Wonders of the World?
+Taj Mahal
+Qutub Minar
+Red Fort
+Charminar
+A
+15
+Which Indian state is known as the "God's Own Country"?
+Kerala
+Goa
+Himachal Pradesh
+Jammu and Kashmir
+A
+15
+Who was the first Indian woman to win an Olympic medal?
+Karnam Malleswari
+Saina Nehwal
+P.V. Sindhu
+Mary Kom
+A
+15
+What is the name of the Indian festival that celebrates the victory of good over evil and is symbolized by the lighting of oil lamps?
+Diwali
+Holi
+Navratri
+Dussehra
+A
+15
+Which Indian scientist won the Nobel Prize in Physics in 1930 for his work on scattering of light and discovery of the Raman effect?
+C.V. Raman
+S. Chandrasekhar
+Homi J. Bhabha
+Satyendra Nath Bose
+A
+15
+What is the capital city of the Indian state of Maharashtra?
+Mumbai
+Pune
+Nagpur
+Nashik
+A
+15
+Who composed the music for the Indian national anthem "Jana Gana Mana"?
+Rabindranath Tagore
+Bankim Chandra Chatterjee
+Sarojini Naidu
+None of the above
+A
+15
+Which Indian city is known as the "City of Joy"?
+Kolkata
+Mumbai
+Delhi
+Chennai
+A
+15
+What is the name of the traditional Indian system of medicine?
+Ayurveda
+Unani
+Siddha
+Homeopathy
+A
+15
+Who is known as the "Missile Woman of India"?
+Tessy Thomas
+Indira Gandhi
+Kalpana Chawla
+Mamata Banerjee
+A
+15
+Which Indian state is known as the "Spice Garden of India"?
+Kerala
+Karnataka
+Assam
+Tamil Nadu
+A
+15
+Who is known as the "Tiger of Mysore"?
+Tipu Sultan
+Raja Raja Chola
+Shivaji Maharaj
+Rani Lakshmibai
+A
+15
+What is the name of the Indian mathematician who introduced the concept of zero?
+Aryabhata
+Brahmagupta
+Bhaskara II
+Aryabhatta II
+B
+15
+Which Indian city is famous for its cotton textiles and is often called the "Manchester of India"?
+Ahmedabad
+Surat
+Mumbai
+Coimbatore
+A
+15
+Who is the current Prime Minister of India (as of 2024)?
+Narendra Modi
+Rahul Gandhi
+Amit Shah
+Manmohan Singh
+A
+15
+What is the name of the Indian classical dance form known for its graceful movements and expressions?
+Bharatanatyam
+Kuchipudi
+Kathakali
+Mohiniyattam
+A
+15
+Which Indian state is known as the "Land of Forests"?
+Madhya Pradesh
+Assam
+Uttarakhand
+Chhattisgarh
+A
+15
+What is the name of the traditional Indian system of exercise and physical discipline?
+Yoga
+Tai Chi
+Pilates
+Zumba
+A
+15
+Who was the first Indian woman to win an individual Olympic medal?
+Karnam Malleswari
+Saina Nehwal
+P.V. Sindhu
+Mary Kom
+A
+15
+Which Indian state is known as the "Land of the Rising Sun"?
+Arunachal Pradesh
+Manipur
+Nagaland
+Mizoram
+A
+15
+Who was the first Indian to win the Nobel Prize in Literature?
+Rabindranath Tagore
+Sarojini Naidu
+C. V. Raman
+Amartya Sen
+A
+15
+What is the name of the Indian festival celebrated with kite flying?
+Makar Sankranti
+Holi
+Diwali
+Navratri
+A
+15
+Who is known as the "Nightangle of India"?
+Lata Mangeshkar
+Asha Bhosle
+Kishore Kumar
+Mohammed Rafi
+A
+15
+Which Indian city is known for its diamond industry and is often called the "Diamond City of India"?
+Surat
+Mumbai
+Jaipur
+Hyderabad
+A
+15
+What is the name of the Indian festival that marks the birth anniversary of Lord Krishna?
+Janmashtami
+Diwali
+Holi
+Navratri
+A
+15
+Which Indian state is known as the "Land of Festivals"?
+Uttar Pradesh
+Punjab
+Rajasthan
+West Bengal
+B
+15
+What is the name of the Indian festival that celebrates the bond between brothers and sisters?
+Raksha Bandhan
+Bhai Dooj
+Dussehra
+Navratri
+A
+15
+Which Indian scientist is known as the "Missile Man of India"?
+A.P.J. Abdul Kalam
+Homi J. Bhabha
+Vikram Sarabhai
+Srinivasa Ramanujan
+A
+15
+Who is known as the "Grand Old Man of India"?
+Dadabhai Naoroji
+Bal Gangadhar Tilak
+Lala Lajpat Rai
+Surendranath Banerjee
+A
+15
+Which Indian city is known as the "City of Lakes"?
+Udaipur
+Jodhpur
+Jaipur
+Bikaner
+A
+15
+Who is known as the "Father of Indian Space Program"?
+Vikram Sarabhai
+Homi J. Bhabha
+A.P.J. Abdul Kalam
+C.V. Raman
+A
+15
+What is the name of the Indian festival that marks the victory of good over evil?
+Dussehra
+Diwali
+Holi
+Navratri
+A
+15
+Which Indian state is known as the "Land of Temples"?
+Tamil Nadu
+Andhra Pradesh
+Karnataka
+Odisha
+A
+15
+What is the name of the Indian festival of colors?
+Holi
+Diwali
+Dussehra
+Navratri
+A
+15
+Who was the first woman President of India?
+Pratibha Patil
+Indira Gandhi
+Sonia Gandhi
+Sarojini Naidu
+A
+15
+Which Indian state is known as the "Land of Rivers"?
+Bihar
+Uttar Pradesh
+Madhya Pradesh
+Bengal
+D
+15
+What is the name of the Indian festival that celebrates the victory of Lord Rama over Ravana?
+Dussehra
+Diwali
+Holi
+Navratri
+A
+15
+Which Indian state is known as the "Land of White Elephants"?
+Kerala
+Assam
+Meghalaya
+Arunachal Pradesh
+B
+15
+Who was the first Indian woman to win an Olympic medal?
+Karnam Malleswari
+Saina Nehwal
+P.V. Sindhu
+Mary Kom
+A
+15
+Which Indian state is known as the "Land of Oranges"?
+Nagaland
+Manipur
+Meghalaya
+Arunachal Pradesh
+C
+15
+What is the name of the Indian festival that marks the beginning of spring?
+Basant Panchami
+Diwali
+Dussehra
+Navratri
+A
+15
+Which Indian state is known as the "Land of Diamonds"?
+Madhya Pradesh
+Chhattisgarh
+Karnataka
+Andhra Pradesh
+D
+15
+Who is known as the "Nightingale of India"?
+Sarojini Naidu
+Indira Gandhi
+Lata Mangeshkar
+Mother Teresa
+A
+15
+Which Indian state is known as the "Land of Thunderbolt"?
+Arunachal Pradesh
+Nagaland
+Manipur
+Meghalaya
+D
+15
+What is the name of the Indian festival celebrated to mark the victory of Lord Krishna over the demon Narakasura?
+Diwali
+Dussehra
+Janmashtami
+Holi
+C
+15
+What is the name of the Indian festival celebrated to welcome the harvest season?
+Pongal
+Diwali
+Holi
+Navratri
+A
+15
+Which Indian state is known as the "Land of Black Diamond"?
+Jharkhand
+Odisha
+West Bengal
+Bihar
+A
+15
+Who was the first Indian woman to win an Olympic medal?
+Karnam Malleswari
+Saina Nehwal
+P.V. Sindhu
+Mary Kom
+A
+15
+Which Indian state is known as the "Land of Lakes and Volcanoes"?
+Goa
+Kerala
+Maharashtra
+Meghalaya
+D
+15
+What is the name of the Indian festival celebrated to mark the end of the harvest season?
+Makar Sankranti
+Lohri
+Baisakhi
+Pongal
+C
+15
+Who was the first Indian woman to win an individual Olympic medal?
+Karnam Malleswari
+Saina Nehwal
+P.V. Sindhu
+Mary Kom
+A
+15
+Which Indian state is known as the "Land of Festivals"?
+Uttar Pradesh
+Punjab
+Rajasthan
+West Bengal
+B
+15
+What is the name of the Indian festival that celebrates the bond between brothers and sisters?
+Raksha Bandhan
+Bhai Dooj
+Dussehra
+Navratri
+A
+15
+Which Indian scientist is known as the "Missile Man of India"?
+A.P.J. Abdul Kalam
+Homi J. Bhabha
+Vikram Sarabhai
+Srinivasa Ramanujan
+A
+15
+Who is known as the "Grand Old Man of India"?
+Dadabhai Naoroji
+Bal Gangadhar Tilak
+Lala Lajpat Rai
+Surendranath Banerjee
+A
+15
+Which Indian city is known as the "City of Lakes"?
+Udaipur
+Jodhpur
+Jaipur
+Bikaner
+A
+15
+Who is known as the "Father of Indian Space Program"?
+Vikram Sarabhai
+Homi J. Bhabha
+A.P.J. Abdul Kalam
+C.V. Raman
+A
+15
+What is the name of the Indian festival that marks the victory of good over evil?
+Dussehra
+Diwali
+Holi
+Navratri
+A
+15
+Which Indian state is known as the "Land of Temples"?
+Tamil Nadu
+Andhra Pradesh
+Karnataka
+Odisha
+A
+15
+What is the name of the Indian festival of colors?
+Holi
+Diwali
+Dussehra
+Navratri
+A
+15
+Who was the first woman President of India?
+Pratibha Patil
+Indira Gandhi
+Sonia Gandhi
+Sarojini Naidu
+A
+15
+Which Indian state is known as the "Land of Rivers"?
+Bihar
+Uttar Pradesh
+Madhya Pradesh
+Bengal
+D
+15
+What is the name of the Indian festival that celebrates the victory of Lord Rama over Ravana?
+Dussehra
+Diwali
+Holi
+Navratri
+A
+15
+Which Indian state is known as the "Land of White Elephants"?
+Kerala
+Assam
+Meghalaya
+Arunachal Pradesh
+B
+15
+Who was the first Indian woman to win an Olympic medal?
+Karnam Malleswari
+Saina Nehwal
+P.V. Sindhu
+Mary Kom
+A
+15
+Which Indian state is known as the "Land of Oranges"?
+Nagaland
+Manipur
+Meghalaya
+Arunachal Pradesh
+C
+15
+What is the name of the Indian festival that marks the beginning of spring?
+Basant Panchami
+Diwali
+Dussehra
+Navratri
+A
+15
+Which Indian state is known as the "Land of Diamonds"?
+Madhya Pradesh
+Chhattisgarh
+Karnataka
+Andhra Pradesh
+D
+15
+Who is known as the "Nightingale of India"?
+Sarojini Naidu
+Indira Gandhi
+Lata Mangeshkar
+Mother Teresa
+A
+15
+Which Indian state is known as the "Land of Thunderbolt"?
+Arunachal Pradesh
+Nagaland
+Manipur
+Meghalaya
+D
+15
+What is the name of the Indian festival celebrated to mark the victory of Lord Krishna over the demon Narakasura?
+Diwali
+Dussehra
+Janmashtami
+Holi
+C
+15
+What is the name of the Indian festival celebrated to welcome the harvest season?
+Pongal
+Diwali
+Holi
+Navratri
+A
+15
+Which Indian state is known as the "Land of Black Diamond"?
+Jharkhand
+Odisha
+West Bengal
+Bihar
+A
+15
+What is the capital city of the Indian state of Karnataka?
+Bangalore
+Mysore
+Mangalore
+Hubli
+A
+15
+Who is known as the "Father of the Indian Constitution"?
+B.R. Ambedkar
+Jawaharlal Nehru
+Mahatma Gandhi
+Sardar Vallabhbhai Patel
+A
+15
+Which Indian city is known as the "City of Joy"?
+Kolkata
+Mumbai
+Delhi
+Chennai
+A
+15
+What is the name of the traditional Indian system of medicine?
+Ayurveda
+Unani
+Siddha
+Homeopathy
+A
+15
+Who is known as the "Missile Woman of India"?
+Tessy Thomas
+Indira Gandhi
+Kalpana Chawla
+Mamata Banerjee
+A
+15
+Which Indian state is known as the "Spice Garden of India"?
+Kerala
+Karnataka
+Assam
+Tamil Nadu
+A
+15
+Who is known as the "Tiger of Mysore"?
+Tipu Sultan
+Raja Raja Chola
+Shivaji Maharaj
+Rani Lakshmibai
+A
+15
+What is the name of the Indian mathematician who introduced the concept of zero?
+Aryabhata
+Brahmagupta
+Bhaskara II
+Aryabhatta II
+B
+15
+Which Indian city is famous for its cotton textiles and is often called the "Manchester of India"?
+Ahmedabad
+Surat
+Mumbai
+Coimbatore
+A
+15
+Who is the current Prime Minister of India (as of 2024)?
+Narendra Modi
+Rahul Gandhi
+Amit Shah
+Manmohan Singh
+A
+15
+What is the name of the Indian classical dance form known for its graceful movements and expressions?
+Bharatanatyam
+Kuchipudi
+Kathakali
+Mohiniyattam
+A
+15
+Which Indian state is known as the "Land of Forests"?
+Madhya Pradesh
+Assam
+Uttarakhand
+Chhattisgarh
+A
+15
+What is the name of the Indian system of exercise and physical discipline?
+Yoga
+Tai Chi
+Pilates
+Zumba
+A
+15
+Who was the first Indian woman to win an individual Olympic medal?
+Karnam Malleswari
+Saina Nehwal
+P.V. Sindhu
+Mary Kom
+A
+15
+Which Indian state is known as the "Land of the Rising Sun"?
+Arunachal Pradesh
+Manipur
+Nagaland
+Mizoram
+A
+15
+Who was the first Indian woman to win an Olympic medal?
+Karnam Malleswari
+Saina Nehwal
+P.V. Sindhu
+Mary Kom
+A
+15
+Which Indian scientist won the Nobel Prize in Physics in 1930 for his work on scattering of light and discovery of the Raman effect?
+C.V. Raman
+S. Chandrasekhar
+Homi J. Bhabha
+Satyendra Nath Bose
+A
+15
