@@ -112,7 +112,77 @@ void player_move(char board[BOARD_SIZE][BOARD_SIZE]) {
   board[row][col] = X;
 }
 
+// Minimax for God mode: O is the maximizing computer, X is the player.
+// Returns a score relative to O: +10 - depth for an O win (prefer faster wins),
+// depth - 10 for an X win (prefer slower losses), 0 for a draw.
+int minimax(char board[BOARD_SIZE][BOARD_SIZE], int depth, int is_maximizing) {
+  if (check_win(board, O)) {
+    return 10 - depth;
+  }
+  if (check_win(board, X)) {
+    return depth - 10;
+  }
+  if (check_draw(board)) {
+    return 0;
+  }
+
+  if (is_maximizing) {
+    int best = -1000;
+    for (int i = 0; i < BOARD_SIZE; i++) {
+      for (int j = 0; j < BOARD_SIZE; j++) {
+        if (board[i][j] == ' ') {
+          board[i][j] = O;
+          int sc = minimax(board, depth + 1, 0);
+          board[i][j] = ' ';
+          if (sc > best) {
+            best = sc;
+          }
+        }
+      }
+    }
+    return best;
+  } else {
+    int best = 1000;
+    for (int i = 0; i < BOARD_SIZE; i++) {
+      for (int j = 0; j < BOARD_SIZE; j++) {
+        if (board[i][j] == ' ') {
+          board[i][j] = X;
+          int sc = minimax(board, depth + 1, 1);
+          board[i][j] = ' ';
+          if (sc < best) {
+            best = sc;
+          }
+        }
+      }
+    }
+    return best;
+  }
+}
+
 void computer_move(char board[BOARD_SIZE][BOARD_SIZE]) {
+  // GOD Mode: play the optimal move via minimax (unbeatable).
+  if (difficulty == 2) {
+    int best_score = -1000, best_row = -1, best_col = -1;
+    for (int i = 0; i < BOARD_SIZE; i++) {
+      for (int j = 0; j < BOARD_SIZE; j++) {
+        if (board[i][j] == ' ') {
+          board[i][j] = O;
+          int sc = minimax(board, 0, 0);
+          board[i][j] = ' ';
+          if (sc > best_score) {
+            best_score = sc;
+            best_row = i;
+            best_col = j;
+          }
+        }
+      }
+    }
+    if (best_row != -1) {
+      board[best_row][best_col] = O;
+      return;
+    }
+  }
+
   // 1. Play for Immediate win
   for (int i = 0; i < BOARD_SIZE; i++) {
     for (int j = 0; j < BOARD_SIZE; j++) {
@@ -140,30 +210,7 @@ void computer_move(char board[BOARD_SIZE][BOARD_SIZE]) {
     }
   }
 
-  // GOD Mode
-  if (difficulty == 2) {
-    // 3. Play Center if available
-    if (board[1][1] == ' ') {
-      board[1][1] = O;
-      return;
-    }
-
-    // 4. Play Corner if available
-    int corner[4][2] = {
-      {0, 0},
-      {0, 2},
-      {2, 0},
-      {2, 2}
-    };
-    for (int i = 0; i < 4; i++) {
-      if (board[corner[i][0]][corner[i][1]] == ' ') {
-        board[corner[i][0]][corner[i][1]] = O;
-        return;
-      }
-    }
-  }
-
-  // 5. Play first available move
+  // 3. Play first available move
   for (int i = 0; i < BOARD_SIZE; i++) {
     for (int j = 0; j < BOARD_SIZE; j++) {
       if (board[i][j] == ' ') {
